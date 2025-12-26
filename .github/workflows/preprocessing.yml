@@ -5,14 +5,14 @@ on:
     branches:
       - main
       - master
-    paths:
-      - 'prepocessing/WA_Fn-UseC_-Telco-Customer-Churn.csv'
-      - 'prepocessing/automate_preprocessing.py'
   pull_request:
     branches:
       - main
       - master
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   preprocess:
