@@ -34,8 +34,7 @@ jobs:
 
     - name: Run preprocessing pipeline
       run: |
-        cd prepocessing
-        python automate_preprocessing.py --input WA_Fn-UseC_-Telco-Customer-Churn.csv --output preprocessed_data.csv --artifacts-dir artifacts
+        python prepocessing/automate_preprocessing.py --input WA_Fn-UseC_-Telco-Customer-Churn.csv --output prepocessing/preprocessed_data.csv --artifacts-dir prepocessing/artifacts
 
     - name: Upload preprocessed data
       uses: actions/upload-artifact@v4
